@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+*{
+    box-sizing: border-box;
+}
+
+form{
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 2px #ddd;
+    margin: 40px auto;
+    max-width: 100vw;
+    max-height: 500px;
+    padding: 20px 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+form input,textarea{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    background-color:white;
+    border: #fff;
+    border-radius: 23px;
+    font-weight: bold;
+}
+form span{
+    color: var(--secondary-color);
+}
+form button{
+    height: 45px;
+    width: 100px;
+    align-items: center;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 23px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.c-head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+.c-container{
+    display: flex;
+    flex-direction: row;
+}
+.c-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.c-left img{
+    height: 10vh;
+    width: 5vw;
+}
+.c-left a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.c-right{
+    flex: 1;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+.c-right form{
+    width: 500px;
+    height: 500px;
+    background-color: var(--third-color);
+    border-radius: 35px;
+}
+.padding{
+    padding: 3%;
+}
+@media (max-width: 1200px) {
+    .c-left img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 992px){
+    .c-right form{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .c-right form{
+        width: 100%;
+    }
+    form input,textarea{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+        padding: 4px;
+        
+    }
+    
+
+}
+@media(max-width:568px){
+    .c-container{
+        flex-direction: column;
+    }
+    .c-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-left p img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+@media(max-width:426px){
+   .c-left .e-img{
+    height: 20vh;
+    width: 30vw;
+    margin-bottom: -30px;
+   }
+   .c-left .p-img{
+    height: 20vh;
+    width: 30vw;
+    margin-bottom: -30px;
+    left: 45vw;
+   }
+   .c-left .l-img{
+    height: 20vh;
+    width: 30vw;
+    margin-bottom: -30px;
+   }
+   .email{
+    font-size: 1rem;
+   }
+
+}

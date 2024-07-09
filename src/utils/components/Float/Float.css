@@ -1,0 +1,39 @@
+.whatsapp-float{
+    position: fixed;
+    right: 10vw;
+    bottom: 10vh;
+    height: 15vh;
+    width: 50px;
+    z-index: 0;
+
+}
+.wp-img{
+    position: fixed;
+    height: 10vh;
+    bottom: 5vh;
+}
+@media(max-width:767px){
+    .wp-img{
+        bottom: 8vh;
+        height: 8vh;
+        width: 10vw;
+        right: 0;
+    }
+}
+@media (max-width: 576px) {
+    .wp-img{
+        bottom: 8vh;
+        height: 10vh;
+        width: 18vw;
+        right: 0;
+    }
+}
+@media(max-width:320px){
+    .wp-img{
+        bottom: 8vh;
+        height: 10vh;
+        height: 10vh;
+        width: 15vw;
+        right: 0px;
+    }
+}
